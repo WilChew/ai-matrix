@@ -1918,15 +1918,271 @@
 
     /* Mobile Responsive Overrides */
     @media (max-width: 768px) {
-      .header-inner { flex-direction: column; gap: 12px; }
-      .header-right { width: 100%; justify-content: space-between; }
-      .jump-nav { overflow-x: auto; max-width: 75%; }
-      .hero-latest-card { padding: 18px 16px; }
-      .hero-main-title { font-size: 1.22rem; }
-      .hero-compact-stats { grid-template-columns: 1fr; }
-      .timeline-beam { left: 24px; }
-      .timeline-node { width: 100%; margin-left: 0 !important; padding-left: 54px !important; padding-right: 0 !important; text-align: left !important; }
-      .timeline-dot { left: 17px !important; right: auto !important; }
+      /* Sticky Header 2-row layout */
+      .sticky-header {
+        padding: 8px 0 6px;
+      }
+      .header-inner {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+          "brand lang"
+          "nav   nav";
+        align-items: center;
+        gap: 10px 12px;
+        padding: 0 14px;
+      }
+      .header-right {
+        display: contents;
+      }
+      .brand-title-wrap {
+        grid-area: brand;
+      }
+      .brand-title {
+        font-size: 1.05rem;
+      }
+      .lang-switcher {
+        grid-area: lang;
+        justify-self: end;
+      }
+      .jump-nav {
+        grid-area: nav;
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 6px;
+        padding: 2px 2px 4px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .jump-nav::-webkit-scrollbar {
+        display: none;
+      }
+      .nav-pill {
+        flex-shrink: 0;
+        padding: 6px 12px;
+        font-size: 0.78rem;
+      }
+
+      /* Container & Section Spacing */
+      .app-wrapper {
+        padding: 0 12px 60px;
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+      .dashboard-section {
+        margin-bottom: 28px;
+      }
+      .section-header {
+        margin-bottom: 16px;
+      }
+      .section-title {
+        font-size: 1.32rem;
+      }
+      .section-subtitle {
+        font-size: 0.78rem;
+        line-height: 1.45;
+      }
+
+      /* Hero Section */
+      .hero-latest-card {
+        padding: 16px 14px;
+      }
+      .hero-main-title {
+        font-size: 1.2rem;
+      }
+      .hero-compact-stats {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      /* Timeline: horizontal scrolling filter pills */
+      .timeline-filter-bar {
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 8px;
+        margin: 16px 0 16px;
+        padding: 2px 2px 6px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+      }
+      .timeline-filter-bar::-webkit-scrollbar {
+        display: none;
+      }
+      .tl-filter-btn {
+        flex-shrink: 0;
+        padding: 6px 14px;
+        font-size: 0.78rem;
+        min-height: 36px;
+      }
+      .timeline-beam {
+        left: 12px;
+      }
+      .timeline-dot {
+        left: 6px !important;
+        right: auto !important;
+      }
+      .timeline-node {
+        width: 100%;
+        margin-left: 0 !important;
+        padding-left: 28px !important;
+        padding-right: 0 !important;
+        text-align: left !important;
+        margin-bottom: 16px;
+      }
+      .timeline-year-mark {
+        margin: 14px 0 10px 28px;
+        font-size: 0.72rem;
+        padding: 3px 10px;
+      }
+      .milestone-card {
+        padding: 14px 14px;
+      }
+      .ms-title {
+        font-size: 1.02rem;
+      }
+      .ms-desc {
+        font-size: 0.8rem;
+        line-height: 1.45;
+      }
+      .ms-specs-row {
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      /* Lineage Panels & Chips Grid (Models & Agents) */
+      .lineage-chips-panel,
+      #layer-agents .lineage-chips-panel {
+        padding: 14px 14px;
+      }
+      .lineage-panel-header,
+      #layer-agents .lineage-panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .lineage-filter-group,
+      #layer-agents .lineage-filter-group {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 6px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 2px;
+      }
+      .lineage-filter-group::-webkit-scrollbar,
+      #layer-agents .lineage-filter-group::-webkit-scrollbar {
+        display: none;
+      }
+      .lineage-sub-btn,
+      #layer-agents .lineage-sub-btn {
+        flex-shrink: 0;
+        padding: 5px 12px;
+        font-size: 0.74rem;
+        min-height: 32px;
+      }
+      .archived-micro-wrap,
+      #layer-agents .archived-micro-wrap {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 6px !important;
+      }
+      .deprecated-micro-btn,
+      #layer-agents .deprecated-micro-btn {
+        padding: 6px 8px;
+        min-width: 0;
+      }
+      .dep-pill-name {
+        font-size: 0.72rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .dep-pill-date {
+        font-size: 0.65rem;
+      }
+      .lineage-inspector-panel,
+      #layer-agents .lineage-inspector-panel {
+        padding: 14px 14px;
+        margin-top: 14px;
+        position: static;
+      }
+      .insp-name,
+      #layer-agents .insp-name {
+        font-size: 1.12rem;
+        line-height: 1.35;
+      }
+      .insp-specs-grid,
+      #layer-agents .insp-specs-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+      .spec-cell,
+      #layer-agents .spec-cell {
+        padding: 8px 10px;
+      }
+
+      /* AI Agents Layer Specifics */
+      .agents-subnav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 18px;
+        padding: 12px 14px;
+      }
+      .agents-jump-group {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        gap: 6px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 2px;
+      }
+      .agents-jump-group::-webkit-scrollbar {
+        display: none;
+      }
+      .agent-jump-pill {
+        flex-shrink: 0;
+        padding: 5px 12px;
+        font-size: 0.76rem;
+        min-height: 34px;
+      }
+      .agents-sync-controls {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .agent-section-header-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .agent-header-meta {
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+      .version-row-btn.version-latest {
+        padding: 12px 14px;
+      }
+      .changelog-list {
+        padding-left: 18px;
+        font-size: 0.8rem;
+        line-height: 1.5;
+      }
+      .dashboard-footer {
+        padding: 20px 14px;
+        font-size: 0.78rem;
+        text-align: center;
+      }
     }
   </style>
 </head>
