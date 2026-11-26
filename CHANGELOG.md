@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.2.0] - 2026-11-26
+
+### 🤖 Official Grok Bot Rebranding & Autonomous Teammates Alignment
+- **xAI Official Agent Rebranded to Grok Bot**:
+  - Rebranded xAI's agent ecosystem from generic coding agent to official **Grok Bot** across all jump pills, navigation badges, section headers, and release logs.
+  - Documented Grok Bot's architecture: dedicated cloud-based virtual machine (cloud desktop with browser, sandboxed terminal, persistent filesystem, 24/7 autonomous routine execution).
+  - Highlighted Grok Bot's multi-bot team delegation, demonstration learning, and human-in-the-loop safety approvals.
+  - Updated agent engine badge to 🧠 Grok 4.7 / Grok 4 with release 4.7.1.
+- **xAI Grok 4.7 Flagship Milestone**:
+  - Verified and anchored **Grok 4.7** (September 21, 2026) with 500,000-token context window (500K Tokens), multi-level reasoning (Low, Medium, High, XHigh), and native IDE/terminal synergy.
+- **DeepSeek-V4.1 Frontier & Open-Weights R1 Clarification**:
+  - Confirmed **DeepSeek-V4.1 Flash (1017)** (October 17, 2026, 1.0M context, Causal Encoder-Decoder CED architecture + CSA2) and **DeepSeek-V4 Pro** (1.6T MoE) as active production flagships.
+  - Emphasized **DeepSeek-R1** as the monumental January 20, 2025 Open-Weights (MIT license) reasoning breakthrough.
+- **Client Cache Refresh**:
+  - Upgraded localStorage cache keys to DASHBOARD_LIVE_MODELS_V5 and DASHBOARD_AGENT_RELEASES_V4 for instant global client cache invalidation.
+- **Author Attribution**: Wil Chew@2026.
+
+---
+
 ## [v2.1.0] - 2026-11-26
 
 ### ⚡ Frontier Generation Alignment (Grok 4.7 & DeepSeek-V4.1)
