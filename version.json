@@ -1,5 +1,5 @@
 {
-  "version": "v1.2.0",
-  "title": "v1.2.0 - Centered Detail Modal & Agent Logo Navigation",
-  "release_notes": "### 🎯 Centered Detail Modal & Agent Logo Navigation\n\n- **Perfect Modal Centering**: Transformed detail modal from bottom-sheet to a balanced, centered card popup on mobile with equal margins and smooth scale animation.\n- **Agent Logo Menu**: Replaced text pills in AI Agents quick-jump navigation with 5 clean, single-row circular/squircle brand logo icon buttons.\n- **Unified Design System**: Mobile navigation now completely harmonized across Models and AI Agents layers."
+  "version": "v2.0.0",
+  "title": "v2.0.0 - Global Top 10 Frontier AI & Official AI Agents Matrix",
+  "release_notes": "### 🌐 Global Top 10 Frontier AI & Official AI Agents Matrix\n\n- **Expanded to Top 10 Mainstream AI Ecosystems**: Comprehensive coverage of Google DeepMind, OpenAI, Anthropic, Alibaba Qwen, Mistral AI, DeepSeek, Microsoft Copilot, xAI Grok, Meta Muse, and ByteDance Doubao.\n- **Mandatory Official AI Agents Roster**: DeepSeek Coder & Agent, GitHub Copilot Workspace & CLI, Grok DeepSearch & Coding Agent, Meta Muse Personal Agent, and Trae AI Native Agent alongside Antigravity, Codex, Claude Code, Qwen Code, and Mistral Vibe.\n- **Mobile-First 10-Brand Touch Swiping**: 10 brand-emblem squircle icon ribbons with touch-scrolling and centered modal popups.\n- **Full Bilingual Localization**: Complete dual-language support (English & Chinese) across all 10 model families and agent changelogs."
 }
