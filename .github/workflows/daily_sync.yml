@@ -1,0 +1,70 @@
+name: Frontier AI 24/7 Automated Sync
+
+on:
+  schedule:
+    # Runs everyday at 00:00 UTC (08:00 AM CST / Beijing Time)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force sync and release even if no new tag is detected'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    name: Check & Sync Frontier Models and Agents
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run automated sync script
+        id: sync_step
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          FORCE_ARG=""
+          if [ "${{ inputs.force }}" = "true" ]; then
+            FORCE_ARG="--force"
+          fi
+          python scripts/auto_sync.py $FORCE_ARG
+
+      - name: Commit and push changes
+        if: steps.sync_step.outputs.has_updates == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.html version.json CHANGELOG.md
+          git commit -m "chore(sync): automated frontier models & agent releases update [skip ci]"
+          git push origin main
+
+      - name: Publish GitHub Release
+        if: steps.sync_step.outputs.has_updates == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="${{ steps.sync_step.outputs.new_version }}"
+          TITLE="${{ steps.sync_step.outputs.release_title }}"
+          echo "Publishing release $TAG: $TITLE"
+          gh release create "$TAG" \
+            --title "$TITLE" \
+            --notes-file release_notes.md \
+            --target main
