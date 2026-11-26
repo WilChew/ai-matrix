@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.1.0] - 2026-11-26
+
+### ⚡ Frontier Generation Alignment (Grok 4.7 & DeepSeek-V4.1)
+- **xAI Grok Track Upgraded to Grok 4.7**:
+  - Track updated to **Grok 4.7** (officially released September 21, 2026), replacing older Grok 3 as the active flagship.
+  - Added 500,000-token context window (`500K Tokens`), multi-level reasoning compute mode (`Low`, `Medium`, `High`, `XHigh`), and native integration with Cursor and the Grok Build terminal agent.
+  - Preserved Grok 4 (May 2026) and Grok 3 (February 2025 Colossus 100K GPU) in historical lineage.
+- **DeepSeek Track Upgraded to DeepSeek-V4.1 Series**:
+  - Active flagship updated to **DeepSeek-V4.1 Flash (1017)** (released October 17, 2026) and **DeepSeek-V4 Pro** (1.6T parameter MoE, August 2026).
+  - Features 1 Million token context window (`1.0M Tokens`), Causal Encoder-Decoder (CED) native multimodal architecture, Compressed Sparse Attention 2 (CSA2), and wish-driven end-to-end project coding.
+  - Preserved **DeepSeek-R1** as the landmark January 2025 open-weights MIT-licensed reasoning breakthrough, and DeepSeek-V3 in the lineage panel.
+- **AI Agent Engine Synchronizations**:
+  - `Grok DeepSearch & Coding Agent` updated to engine: `🧠 Grok 4.7 / Grok 4` with release `v4.7.1`.
+  - `DeepSeek Coder & Agent` updated to engine: `🧠 DeepSeek-V4.1 / V4-Pro & R1` with release `v4.1.2` (DeepSeek Harness native integration).
+- **Client Cache Flush**:
+  - Bumped client storage keys to `DASHBOARD_LIVE_MODELS_V4` and `DASHBOARD_AGENT_RELEASES_V3` to ensure instant cache invalidation for visiting browsers.
+- **Author Attribution**: `Wil Chew@2026`.
+
+---
+
 ## [v2.0.0] - 2026-11-26
 
 ### 🌐 Global Top 10 Frontier AI & Official AI Agents Matrix (Major Milestone)
@@ -28,7 +48,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Floating centered modal popup displaying complete technical specifications and capabilities with 0.0px vertical centering delta.
 - **Autonomous Lineage & Inspector Panels**: Added 5 new autonomous model family lineage panels and inspector views with active/ultra/retired sub-filters.
 - **Bilingual Internationalization (EN / 中文)**: 100% localized descriptions, subtitles, tiers, and agent release bullets across all 10 ecosystems.
-- **Author Attribution**: Authored by `Wil Chew@2026`.
 
 ---
 
@@ -37,17 +56,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🎯 Centered Detail Modal & Agent Logo Navigation
 - **Centered Detail Modal**: Repositioned the mobile detail modal from bottom-sheet sticking to a perfectly centered floating dialog with equal vertical margins (0px delta), full 20px rounded corners, and backdrop blur.
 - **Agent Logo Menu**: Converted the AI Agents jump-navigation menu on mobile into 5 clean, single-row circular/squircle logo icon buttons (`Antigravity`, `Codex`, `Claude Code`, `Qwen Code`, `Mistral Vibe`).
-- **Unified Mobile Visual Language**: Both Models and Agents tabs now share the exact same minimalist, single-row logo navigation bar with zero text wrapping.
 
 ---
 
 ## [v1.1.0] - 2026-11-26
 
 ### 📱 Mobile UI/UX Redesign & Architecture Overhaul
-- **Ultra-Compact Milestone Tiles**: Redesigned mobile timeline cards from ~140px tall paragraphs into sleek 46px compact tiles showing Brand Logo, Model Name, Release Date, and touch chevron `›`. Allows viewing 5-8 milestones on a single mobile screen.
+- **Ultra-Compact Milestone Tiles**: Redesigned mobile timeline cards from ~140px tall paragraphs into sleek 46px compact tiles showing Brand Logo, Model Name, Release Date, and touch chevron `›`.
 - **Brand Logo Icon Filter Bar**: Replaced wrapping text pill filters on mobile with clean squircle circular icon buttons fitting neatly on a single row with zero line-wrapping.
-- **Interactive Detail Modal (Bottom-Sheet / Dialog)**: Added `#model-detail-modal` popup triggered when tapping any model tile. Features backdrop blur, tactile mobile grabber handle, 4-cell technical specs grid (Context Window, Modalities, Access Plan, System ID), and full capabilities description text.
-- **Eliminated Top Header Duplication**: Removed the redundant `.mobile-layer-segment` in the mobile header, keeping the top bar slim (42px) and leaving all layer navigation to the thumb-friendly bottom dock.
+- **Interactive Detail Modal (Bottom-Sheet / Dialog)**: Added `#model-detail-modal` popup triggered when tapping any model tile.
 - **Bilingual Popup Support**: Full Chinese and English localized labels for modal specs and action buttons.
 
 ---
@@ -57,7 +74,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### 🚀 Initial Official Release
 - **Global Top Labs Model Matrix**: Full frontier spectrum tracking for Google DeepMind (Gemini), OpenAI (ChatGPT), Anthropic (Claude), Alibaba (Qwen), and Mistral AI.
 - **AI Coding Agents Matrix**: Dedicated layer tracking release changelogs for Google Antigravity Desktop, OpenAI Codex CLI, Claude Code, Alibaba Qwen Code, and Mistral Vibe.
-- **Autonomous Cloud Sync**: Dynamic epoch parsing, real-time model verification, and client-side caching.
-- **Bilingual Interface**: Seamless one-click English and Chinese (`EN` / `中文`) language switching.
-- **Zero-Dependency Architecture**: Standalone, self-contained single-page responsive web application running on GitHub Pages.
-- **Brand Attribution**: Official branding with `Wil Chew@2026`.
