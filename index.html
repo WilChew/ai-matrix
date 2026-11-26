@@ -3395,7 +3395,7 @@
           <a href="#sec-agent-mistralvibe" class="agent-jump-pill theme-mistralvibe"><svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-mistral"/></svg><span>Mistral Vibe</span></a>
           <a href="#sec-agent-deepseek" class="agent-jump-pill theme-deepseek"><svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-deepseek"/></svg><span>DeepSeek</span></a>
           <a href="#sec-agent-copilot" class="agent-jump-pill theme-copilot"><svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-copilot"/></svg><span>Copilot</span></a>
-          <a href="#sec-agent-grok" class="agent-jump-pill theme-grok"><svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-grok"/></svg><span>Grok</span></a>
+          <a href="#sec-agent-grok" class="agent-jump-pill theme-grok"><svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-grok"/></svg><span>Grok Bot</span></a>
           <a href="#sec-agent-muse" class="agent-jump-pill theme-muse"><svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-muse"/></svg><span>Muse</span></a>
           <a href="#sec-agent-trae" class="agent-jump-pill theme-trae"><svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-bytedance"/></svg><span>Trae</span></a>
         </div>
@@ -3661,7 +3661,7 @@
         <header class="section-header">
           <div class="section-title-wrap">
             <svg class="brand-svg-lg" aria-hidden="true"><use href="#logo-grok"/></svg>
-            <h2 class="section-title" id="title-agent-grok">Grok DeepSearch &amp; Coding Agent</h2>
+            <h2 class="section-title" id="title-agent-grok">Grok Bot</h2>
           </div>
           <div class="agent-model-badge theme-grok">
             <span>🧠 Grok 4.7 / Grok 4</span>
@@ -3848,7 +3848,7 @@
     let timelineDisplayLimit = 5;
     let currentTimelineFilter = 'all';
     let brandSubFilters = { gemini: 'all', chatgpt: 'all', claude: 'all', qwen: 'all', mistral: 'all', deepseek: 'all', copilot: 'all', grok: 'all', muse: 'all', bytedance: 'all' };
-    const AGENT_RELEASES_CACHE_KEY = 'DASHBOARD_AGENT_RELEASES_V3';
+    const AGENT_RELEASES_CACHE_KEY = 'DASHBOARD_AGENT_RELEASES_V4';
     const AGENT_SYNC_CHECKPOINT_KEY = 'AGENT_SYNC_CHECKPOINT_V3';
 
     let activeLayer = 'models';
@@ -4621,7 +4621,9 @@
       grok: {
         key: "grok",
         icon: `<svg class="brand-svg-sm" aria-hidden="true"><use href="#logo-grok"/></svg>`,
-        name: "Grok DeepSearch & Coding Agent",
+        name: "Grok Bot",
+        tagline_zh: "xAI 全天候自主数字同事与智能体平台",
+        tagline_en: "xAI Autonomous Teammate & Agent Platform",
         themeClass: "theme-grok",
         url: "https://x.ai/grok",
         plans: ["Free", "Plus", "Ultra"],
@@ -5169,63 +5171,63 @@
 ],
       grok: [
         {
-                "id": "grk-2.4.0",
-                "tag": "v2.4.0",
-                "date": "2026.11.24",
-                "source": "Grok Coding Agent",
-                "url": "https://x.ai/grok",
-                "headline_zh": "DeepSearch \u591a\u8df3\u5b9e\u65f6\u7f51\u7edc\u5408\u6210\u4e0e 100\u4e07 Token \u4ee3\u7801\u6d41\u5f0f\u5904\u7406",
-                "headline_en": "DeepSearch Multi-Hop Web Synthesis & 1M Token Streaming",
-                "bullets_zh": [
-                        "\u642d\u8f7d Grok 3 Colossus \u6838\u5fc3\uff0c\u652f\u6301\u9ad8\u8fbe 100 \u4e07 Token \u7684\u6781\u957f\u4ee3\u7801\u5e93\u68c0\u7d22\u4e0e\u63a8\u6f14\u3002",
-                        "DeepSearch \u81ea\u4e3b\u591a\u8df3\u641c\u7d22\uff0c\u8de8\u5b9e\u65f6\u7f51\u7edc\u3001\u6280\u672f\u535a\u5ba2\u4e0e\u5b98\u65b9\u6587\u6863\u8fdb\u884c\u7efc\u5408\u63a8\u7406\u3002",
-                        "\u5168\u65b0\u6781\u901f\u4ee3\u7801\u8865\u5168\u6d41\uff08Turbo Stream\uff09\uff0c\u9996\u5b57\u5ef6\u8fdf\u8fdb\u5165 90ms \u65f6\u4ee3\u3002"
-                ],
-                "bullets_en": [
-                        "Powered by Grok 3 on Colossus supercluster: native 1M token context window for massive repos.",
-                        "DeepSearch autonomous multi-hop research across web, tech documentation, and live data.",
-                        "Turbo Stream coding pipeline delivering initial tokens in under 90 milliseconds."
-                ]
+          "id": "grk-bot-4.7.1",
+          "tag": "v4.7.1",
+          "date": "2026.10.12",
+          "source": "Grok Bot (xAI Cloud Teammate)",
+          "url": "https://x.ai",
+          "headline_zh": "Grok Bot 持久化云端环境与 24/7 日常习惯自动化执行",
+          "headline_en": "Persistent Cloud Environment & 24/7 Autonomous Routine Execution",
+          "bullets_zh": [
+            "每个 Grok Bot 配备专属云端计算环境，即使用户关闭电脑也能全天候自主执行复杂多步工作流。",
+            "具备第三方工具、网站登录与 API 无缝操作能力，像真人一样自主浏览网页与处理任务。",
+            "搭载 Grok 4.7 核心，支持 XHigh 深度自我验证与 Cursor / Grok Build 终端协同。"
+          ],
+          "bullets_en": [
+            "Each Grok Bot operates on a dedicated cloud-based machine with browser, terminal, and filesystem, working 24/7 even after closing your laptop.",
+            "Direct interaction with 3rd-party apps, vendor portals, and developer tools without requiring custom APIs.",
+            "Powered by Grok 4.7 core with XHigh reasoning effort, integrated with Cursor and Grok Build environments."
+          ]
         },
         {
-                "id": "grk-2.3.5",
-                "tag": "v2.3.5",
-                "date": "2026.11.19",
-                "source": "Grok Coding Agent",
-                "url": "https://x.ai/grok",
-                "headline_zh": "\u5b9e\u65f6\u70ed\u70b9\u6570\u636e\u6d41\u5173\u8054\u5206\u6790\u4e0e\u7cfb\u7edf\u6307\u6807\u667a\u80fd\u6392\u969c",
-                "headline_en": "Real-time Platform Signal Reasoning & System Diagnostics",
-                "bullets_zh": [
-                        "\u5b9e\u65f6\u5173\u8054\u5168\u7f51\u6280\u672f\u8d8b\u52bf\u4e0e\u7a81\u53d1\u5f02\u5e38\u62a5\u9519\u6a21\u5f0f\uff0c\u52a0\u901f\u5f00\u6e90\u6846\u67b6\u95ee\u9898\u5b9a\u4f4d\u3002",
-                        "\u589e\u5f3a Python \u6570\u636e\u79d1\u5b66\u5206\u6790\u6c99\u7bb1\uff0c\u652f\u6301\u5373\u65f6\u6e32\u67d3\u56fe\u8868\u4e0e\u4ea4\u4e92\u5f0f\u53ef\u89c6\u5316\u3002",
-                        "\u4f18\u5316\u591a\u6a21\u6001\u67b6\u6784\u56fe\u53cd\u5411\u751f\u6210\u4ee3\u7801\u811a\u624b\u67b6\u7684\u51c6\u786e\u7387\u3002"
-                ],
-                "bullets_en": [
-                        "Correlates live developer bug discussions to diagnose emergent library regressions.",
-                        "Integrated Python computational sandbox with inline interactive visualization rendering.",
-                        "Enhanced architectural diagram-to-code synthesis accuracy for system designs."
-                ]
+          "id": "grk-bot-4.7.0",
+          "tag": "v4.7.0",
+          "date": "2026.09.21",
+          "source": "Grok Bot (xAI Cloud Teammate)",
+          "url": "https://x.ai",
+          "headline_zh": "多 Bot 协同机制（Multi-Bot Handoff）与示范教学学习（Routine Learning）",
+          "headline_en": "Multi-Bot Handoff & Demonstration Routine Learning",
+          "bullets_zh": [
+            "支持同时部署多名数字同事，调研 Bot 可将收集的信息与代码架构无缝交接给构建 Bot 执行。",
+            "引入示范式学习（Watch & Learn），用户操作演示一次后 Bot 自动沉淀为可复用的日常例程。",
+            "无缝打通 X 平台实时数据流，全自动监测热点资讯、舆情与突发事件。"
+          ],
+          "bullets_en": [
+            "Multi-bot collaboration: deploy specialized teammate bots that pass tasks between each other in shared threads.",
+            "Demonstration learning: demonstrate a workflow once and Grok Bot remembers the routine and user preferences.",
+            "Native real-time X signal integration for live trend monitoring, mentions, and breaking news tracking."
+          ]
         },
         {
-                "id": "grk-2.3.0",
-                "tag": "v2.3.0",
-                "date": "2026.11.12",
-                "source": "Grok Coding Agent",
-                "url": "https://x.ai/grok",
-                "headline_zh": "\u81ea\u4e3b\u7f16\u7801\u6c99\u7bb1\u4e0e\u5373\u65f6 Python \u6267\u884c\u73af\u5883",
-                "headline_en": "Autonomous Coding Sandbox with Live Python Execution",
-                "bullets_zh": [
-                        "\u5b89\u5168\u6c99\u7bb1\u5185\u4e00\u952e\u7f16\u8bd1\u6267\u884c\u811a\u672c\uff0c\u81ea\u52a8\u6355\u83b7\u63a7\u5236\u53f0\u8f93\u51fa\u5e76\u6821\u9a8c\u7ed3\u679c\u3002",
-                        "\u652f\u6301\u667a\u80fd\u751f\u6210 LaTeX \u6570\u5b66\u516c\u5f0f\u63a8\u5bfc\u4e0e\u590d\u6742\u7b97\u6cd5\u4f2a\u4ee3\u7801\u3002",
-                        "\u63d0\u5347\u957f\u5bf9\u8bdd\u4e0b\u8bb0\u5fc6\u6301\u4e45\u5ea6\uff0c\u4e0d\u518d\u4e22\u5931\u9879\u76ee\u6838\u5fc3\u7ea6\u675f\u3002"
-                ],
-                "bullets_en": [
-                        "Isolated code execution sandbox capturing stdout/stderr for automated assertions.",
-                        "Accurate LaTeX mathematical notation rendering and algorithm pseudocode generation.",
-                        "Long-horizon conversational context retention preventing loss of project architectural rules."
-                ]
+          "id": "grk-bot-4.0.0",
+          "tag": "v4.0.0",
+          "date": "2026.05.15",
+          "source": "Grok Bot (xAI Cloud Teammate)",
+          "url": "https://x.ai",
+          "headline_zh": "Grok Bot 全自主数字同事平台公测，支持 Human-in-the-Loop 审批",
+          "headline_en": "Grok Bot Teammate Platform Launch with Human-in-the-Loop Approval",
+          "bullets_zh": [
+            "xAI 官方自主数字同事与智能体架构正式上线，跨桌面与移动端均可即时交互协同。",
+            "采用 Human-in-the-Loop 设计哲学，遇到支付、2FA 双重认证等关键节点主动向用户发起确认。",
+            "支持全自动终端 Bash 编译、测试用例回溯与代码安全审查。"
+          ],
+          "bullets_en": [
+            "xAI officially launches the Grok Bot autonomous teammate platform across desktop and mobile apps.",
+            "Human-in-the-loop approvals: executes end-to-end tasks independently and only prompts for 2FA or key decisions.",
+            "Full terminal shell compilation, test verification, and proactive security policy validation."
+          ]
         }
-],
+      ],
       muse: [
         {
                 "id": "mus-1.4.2",
