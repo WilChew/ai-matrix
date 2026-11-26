@@ -1,5 +1,5 @@
 {
-  "version": "v1.1.0",
-  "title": "v1.1.0 - Mobile UI/UX Redesign & Detail Popup Modal",
-  "release_notes": "### 📱 Mobile UI/UX Redesign & Detail Popup Modal\n\n- **46px Ultra-Compact Milestone Tiles**: Redesigned mobile cards into compact glanceable rows.\n- **Logo-Only Filter Ribbon**: Single horizontal row of brand icons with zero text wrapping.\n- **Detail Modal Popup (Bottom-Sheet)**: Tap any model to view 4-cell tech specs and full description.\n- **Eliminated Top Header Clutter**: Top bar streamlined; view switching handled by bottom dock.\n- **Bilingual Support**: Localized English and Chinese modal labels."
+  "version": "v1.2.0",
+  "title": "v1.2.0 - Centered Detail Modal & Agent Logo Navigation",
+  "release_notes": "### 🎯 Centered Detail Modal & Agent Logo Navigation\n\n- **Perfect Modal Centering**: Transformed detail modal from bottom-sheet to a balanced, centered card popup on mobile with equal margins and smooth scale animation.\n- **Agent Logo Menu**: Replaced text pills in AI Agents quick-jump navigation with 5 clean, single-row circular/squircle brand logo icon buttons.\n- **Unified Design System**: Mobile navigation now completely harmonized across Models and AI Agents layers."
 }
