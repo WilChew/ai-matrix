@@ -1,0 +1,5 @@
+{
+  "version": "v1.1.0",
+  "title": "v1.1.0 - Mobile UI/UX Redesign & Detail Popup Modal",
+  "release_notes": "### 📱 Mobile UI/UX Redesign & Detail Popup Modal\n\n- **46px Ultra-Compact Milestone Tiles**: Redesigned mobile cards into compact glanceable rows.\n- **Logo-Only Filter Ribbon**: Single horizontal row of brand icons with zero text wrapping.\n- **Detail Modal Popup (Bottom-Sheet)**: Tap any model to view 4-cell tech specs and full description.\n- **Eliminated Top Header Clutter**: Top bar streamlined; view switching handled by bottom dock.\n- **Bilingual Support**: Localized English and Chinese modal labels."
+}
