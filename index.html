@@ -1393,6 +1393,226 @@
       letter-spacing: 0.04em;
     }
 
+    .ms-right-meta {
+      display: none;
+    }
+
+    /* ==========================================================================
+       6b. Model Detail Modal / Bottom Sheet Popup
+       ========================================================================== */
+    .detail-modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: rgba(3, 8, 20, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.26s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.26s;
+    }
+
+    .detail-modal-backdrop.open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    .detail-modal-sheet {
+      width: 92%;
+      max-width: 540px;
+      max-height: 86vh;
+      background: linear-gradient(180deg, #0e172c 0%, #060c1a 100%);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 22px;
+      padding: 16px 20px 22px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 24px rgba(0, 229, 255, 0.12);
+      transform: scale(0.95) translateY(12px);
+      transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+    }
+
+    .detail-modal-backdrop.open .detail-modal-sheet {
+      transform: scale(1) translateY(0);
+    }
+
+    .modal-handle-bar {
+      display: none;
+      width: 40px;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(255, 255, 255, 0.25);
+      margin: 0 auto 12px;
+    }
+
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .modal-brand-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 4px 12px 4px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-org-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-sub);
+    }
+
+    .modal-close-btn {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.06);
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      transform: scale(1.05);
+    }
+
+    .modal-title-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .modal-model-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    .modal-tier-badge {
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      background: rgba(0, 229, 255, 0.15);
+      color: var(--neon-cyan);
+      border: 1px solid rgba(0, 229, 255, 0.35);
+    }
+
+    .modal-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+
+    .modal-chip {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      color: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .modal-specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .modal-spec-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      border-radius: 10px;
+      padding: 8px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .modal-spec-card .spec-label {
+      font-size: 0.68rem;
+      color: var(--text-sub);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .modal-spec-card .spec-value {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #ffffff;
+      word-break: break-all;
+    }
+
+    .modal-desc-wrap {
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 14px;
+    }
+
+    .modal-desc-heading {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--neon-cyan);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin: 0 0 6px 0;
+    }
+
+    .modal-desc-text {
+      font-size: 0.82rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.85);
+      margin: 0;
+    }
+
+    .modal-footer {
+      margin-top: auto;
+    }
+
+    .modal-action-btn {
+      width: 100%;
+      padding: 10px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.2), rgba(124, 77, 255, 0.2));
+      border: 1px solid rgba(0, 229, 255, 0.4);
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .modal-action-btn:hover {
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.35), rgba(124, 77, 255, 0.35));
+    }
+
     /* ==========================================================================
        7. Footer
        ========================================================================== */
@@ -1928,24 +2148,20 @@
         padding-bottom: 76px !important;
       }
       .sticky-header {
-        padding: 8px 12px 10px;
+        padding: 8px 12px;
         background: rgba(3, 8, 20, 0.94);
         backdrop-filter: blur(28px);
         -webkit-backdrop-filter: blur(28px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       }
       .header-inner {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-areas:
-          "brand lang"
-          "seg   seg";
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        gap: 8px 12px;
+        gap: 8px;
         padding: 0;
       }
       .brand-title-wrap {
-        grid-area: brand;
         display: flex;
         align-items: center;
         gap: 8px;
@@ -1960,14 +2176,13 @@
         font-weight: 800;
       }
       .header-right {
-        display: contents;
+        display: flex;
+        align-items: center;
       }
       .jump-nav {
         display: none !important;
       }
       .lang-switcher {
-        grid-area: lang;
-        justify-self: end;
         display: flex;
         padding: 2px;
       }
@@ -1976,39 +2191,11 @@
         font-size: 0.72rem;
       }
 
-      /* Prominent Mobile Segmented Control */
+      /* Hide redundant top segmented bar on mobile, bottom dock handles view switching */
       .mobile-layer-segment {
-        grid-area: seg;
-        display: flex;
-        width: 100%;
-        background: rgba(255, 255, 255, 0.05);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 999px;
-        padding: 3px;
-        gap: 4px;
+        display: none !important;
       }
-      .segment-btn {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 6px;
-        padding: 6px 12px;
-        border-radius: 999px;
-        background: transparent;
-        border: none;
-        color: rgba(255, 255, 255, 0.65);
-        font-size: 0.8rem;
-        font-weight: 600;
-        cursor: pointer;
-        transition: all 0.2s ease;
-      }
-      .segment-btn.active {
-        background: linear-gradient(135deg, rgba(0, 229, 255, 0.25), rgba(124, 77, 255, 0.25));
-        border: 1px solid rgba(0, 229, 255, 0.5);
-        color: #ffffff;
-        box-shadow: 0 2px 10px rgba(0, 229, 255, 0.22);
-      }
+
       .desktop-only {
         display: none !important;
       }
@@ -2071,125 +2258,184 @@
         margin-bottom: 24px;
       }
       .section-header {
-        margin-bottom: 10px;
+        margin-bottom: 8px;
       }
       .section-title {
         font-size: 1.22rem;
       }
       .section-subtitle {
-        font-size: 0.74rem;
-        opacity: 0.65;
-        margin-top: 2px;
-        line-height: 1.35;
+        display: none !important;
       }
 
-      /* Timeline: Touch-Friendly Brand Ribbon */
+      /* Timeline: Pure Logo-Only Ribbon on Mobile */
       .timeline-filter-bar {
-        display: flex;
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        gap: 6px;
-        margin: 10px 0 14px;
-        padding: 2px 0 4px;
-        scrollbar-width: none;
-        -webkit-overflow-scrolling: touch;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+        margin: 6px 0 12px !important;
+        padding: 2px 0 !important;
+        width: 100% !important;
+        overflow-x: auto !important;
+        scrollbar-width: none !important;
+        -webkit-overflow-scrolling: touch !important;
       }
       .timeline-filter-bar::-webkit-scrollbar {
-        display: none;
+        display: none !important;
       }
       .tl-filter-btn {
-        padding: 6px 12px;
-        font-size: 0.76rem;
-        min-height: 32px;
-        border-radius: 999px;
-        white-space: nowrap;
-        flex-shrink: 0;
-        gap: 5px;
+        width: 40px !important;
+        height: 40px !important;
+        min-height: 40px !important;
+        min-width: 40px !important;
+        padding: 0 !important;
+        border-radius: 12px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-shrink: 0 !important;
+        background: rgba(255, 255, 255, 0.05) !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      }
+      .tl-filter-btn span[data-i18n] {
+        display: none !important;
+      }
+      .tl-filter-btn .tl-filter-icon {
+        font-size: 1.15rem !important;
+        margin: 0 !important;
+      }
+      .tl-filter-btn .brand-svg-sm {
+        width: 22px !important;
+        height: 22px !important;
+        margin: 0 !important;
+      }
+      .tl-filter-btn.active {
+        background: rgba(0, 229, 255, 0.18) !important;
+        border-color: var(--neon-cyan) !important;
+        box-shadow: 0 0 14px rgba(0, 229, 255, 0.35) !important;
+        transform: scale(1.06) !important;
       }
 
-      /* Timeline Stream (Refined Left Spine & Compact Cards) */
+      /* Timeline Stream (Ultra-Compact Glanceable List Tile with Detail Popup on Mobile) */
       .timeline-beam {
-        left: 8px;
+        display: none !important;
       }
       .timeline-node {
-        width: 100%;
+        width: 100% !important;
         margin-left: 0 !important;
-        padding-left: 20px !important;
+        padding-left: 0 !important;
         padding-right: 0 !important;
         text-align: left !important;
-        margin-bottom: 10px;
+        margin-bottom: 6px !important;
       }
       .timeline-dot {
-        left: 3px !important;
-        right: auto !important;
-        width: 10px;
-        height: 10px;
-        top: 14px;
+        display: none !important;
       }
       .timeline-year-mark {
-        margin: 10px 0 8px 20px;
-        font-size: 0.7rem;
-        padding: 2px 8px;
+        margin: 10px 0 6px 0 !important;
+        font-size: 0.68rem !important;
+        padding: 2px 8px !important;
+        border-radius: 6px !important;
+        background: rgba(255, 255, 255, 0.06) !important;
+        display: inline-block !important;
       }
       .milestone-card {
-        padding: 10px 12px;
-        border-radius: 13px;
-        background: rgba(12, 19, 36, 0.8);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-left-width: 3px;
-        cursor: pointer;
+        padding: 8px 12px !important;
+        border-radius: 10px !important;
+        background: rgba(13, 20, 36, 0.75) !important;
+        border: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-left-width: 3.5px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        gap: 8px !important;
+        cursor: pointer !important;
+        min-height: 46px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25) !important;
+        transition: background 0.18s, border-color 0.18s, transform 0.18s !important;
       }
-      .milestone-card.brand-gemini { border-left-color: #4285F4; }
-      .milestone-card.brand-chatgpt { border-left-color: #10a37f; }
-      .milestone-card.brand-claude { border-left-color: #d97706; }
-      .milestone-card.brand-qwen { border-left-color: #7c3aed; }
-      .milestone-card.brand-mistral { border-left-color: #f97316; }
+      .milestone-card:active {
+        background: rgba(30, 41, 59, 0.95) !important;
+        transform: scale(0.99) !important;
+      }
+      .milestone-card.brand-gemini { border-left-color: #4285F4 !important; }
+      .milestone-card.brand-chatgpt { border-left-color: #10a37f !important; }
+      .milestone-card.brand-claude { border-left-color: #d97706 !important; }
+      .milestone-card.brand-qwen { border-left-color: #7c3aed !important; }
+      .milestone-card.brand-mistral { border-left-color: #f97316 !important; }
 
       .ms-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 4px;
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        margin: 0 !important;
+        flex: 1 1 auto !important;
+        min-width: 0 !important;
       }
       .ms-brand-tag {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-      }
-      .ms-date-badge {
-        font-size: 0.68rem;
-        padding: 2px 6px;
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        flex-shrink: 0 !important;
       }
       .ms-brand-pill {
-        font-size: 0.68rem;
-        padding: 2px 6px;
+        display: none !important;
+      }
+      .ms-date-desktop {
+        display: none !important;
       }
       .ms-title {
-        font-size: 0.96rem;
-        font-weight: 700;
-        margin-bottom: 3px;
-        color: #ffffff;
+        font-size: 0.86rem !important;
+        font-weight: 700 !important;
+        color: #ffffff !important;
+        margin: 0 !important;
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        flex: 1 1 auto !important;
       }
-      .ms-metaphor-sub {
-        font-size: 0.72rem;
-        margin-bottom: 4px;
-        display: inline-block;
-      }
+      .ms-metaphor-sub,
       .ms-desc {
-        font-size: 0.75rem;
-        line-height: 1.4;
-        color: rgba(255, 255, 255, 0.72);
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        margin: 0;
-        transition: max-height 0.25s ease;
+        display: none !important;
       }
-      .milestone-card.expanded .ms-desc {
+      .ms-right-meta {
+        display: flex !important;
+        align-items: center !important;
+        gap: 6px !important;
+        flex-shrink: 0 !important;
+      }
+      .ms-right-meta .ms-date-badge {
+        font-size: 0.65rem !important;
+        padding: 2px 6px !important;
+        background: rgba(255, 255, 255, 0.06) !important;
+        color: rgba(255, 255, 255, 0.65) !important;
+        border-radius: 4px !important;
+        white-space: nowrap !important;
+      }
+      .ms-chevron {
+        font-size: 1.15rem !important;
+        color: rgba(255, 255, 255, 0.4) !important;
+        line-height: 1 !important;
+      }
+
+      /* Detail Modal Bottom-Sheet specific styles on Mobile */
+      .detail-modal-backdrop {
+        align-items: flex-end;
+      }
+      .detail-modal-sheet {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px 20px 0 0;
+        max-height: 85vh;
+        transform: translateY(100%);
+      }
+      .detail-modal-backdrop.open .detail-modal-sheet {
+        transform: translateY(0);
+      }
+      .modal-handle-bar {
         display: block;
-        -webkit-line-clamp: unset;
       }
 
       /* Lineage Panels & Chips Grid (Models & Agents) */
@@ -2861,6 +3107,61 @@
       </button>
     </nav>
 
+    <!-- Model Detail Modal Popup (Touch-Friendly Bottom-Sheet on Mobile, Centered Dialog on Desktop) -->
+    <div id="model-detail-modal" class="detail-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true" onclick="handleModalBackdropClick(event)">
+      <div class="detail-modal-sheet" role="document">
+        <div class="modal-handle-bar"></div>
+        <div class="modal-header">
+          <div class="modal-brand-badge" id="modal-brand-wrap">
+            <svg class="brand-svg-sm" aria-hidden="true"><use id="modal-brand-svg-use" href="#logo-gemini"/></svg>
+            <span id="modal-brand-org" class="modal-org-name">Google DeepMind</span>
+          </div>
+          <button type="button" class="modal-close-btn" onclick="closeModelDetailModal()" aria-label="Close">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-title-row">
+            <h3 id="modal-model-title" class="modal-model-title">Model Title</h3>
+            <span id="modal-tier-badge" class="modal-tier-badge">Plus</span>
+          </div>
+
+          <div class="modal-meta-row">
+            <span id="modal-date-badge" class="modal-chip">📅 2026.11.18</span>
+            <span id="modal-context-chip" class="modal-chip">🧠 1.0M Tokens</span>
+            <span id="modal-status-chip" class="modal-chip">🟢 Active</span>
+          </div>
+
+          <div class="modal-specs-grid">
+            <div class="modal-spec-card">
+              <span class="spec-label" data-i18n="modalContextLabel">Context Window</span>
+              <span class="spec-value" id="modal-spec-context">1,048,576 tokens</span>
+            </div>
+            <div class="modal-spec-card">
+              <span class="spec-label" data-i18n="modalModalityLabel">Modalities</span>
+              <span class="spec-value" id="modal-spec-modalities">Text, Vision</span>
+            </div>
+            <div class="modal-spec-card">
+              <span class="spec-label" data-i18n="modalTierLabel">Access Tier</span>
+              <span class="spec-value" id="modal-spec-tier">Plus Tier</span>
+            </div>
+            <div class="modal-spec-card">
+              <span class="spec-label" data-i18n="modalModelIdLabel">System ID</span>
+              <span class="spec-value" id="modal-spec-id">gemini-4-neon</span>
+            </div>
+          </div>
+
+          <div class="modal-desc-wrap">
+            <h4 class="modal-desc-heading" data-i18n="modalDescHeading">Architecture &amp; Capabilities</h4>
+            <p id="modal-desc-text" class="modal-desc-text"></p>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-action-btn" onclick="closeModelDetailModal()" data-i18n="modalCloseBtn">Close</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <script>
@@ -2969,7 +3270,13 @@
         lblLatestTag: "最新",
         prevReleasesTitle: "历史版本 (Previous Releases)",
         lblAccessPlans: "可用订阅方案",
-        agentReleaseBtn: "查看完整更新日志 ↗"
+        agentReleaseBtn: "查看完整更新日志 ↗",
+        modalContextLabel: "上下文窗口",
+        modalModalityLabel: "交互模态",
+        modalTierLabel: "订阅方案",
+        modalModelIdLabel: "系统代号",
+        modalDescHeading: "架构特性与能力解析",
+        modalCloseBtn: "关闭详情"
       },
       en: {
         navTimeline: "Timeline",
@@ -3048,7 +3355,13 @@
         lblLatestTag: "Latest",
         prevReleasesTitle: "Previous Releases",
         lblAccessPlans: "Available Plans",
-        agentReleaseBtn: "Full Release Notes ↗"
+        agentReleaseBtn: "Full Release Notes ↗",
+        modalContextLabel: "Context Window",
+        modalModalityLabel: "Modalities",
+        modalTierLabel: "Access Tier",
+        modalModelIdLabel: "System ID",
+        modalDescHeading: "Architecture & Capabilities",
+        modalCloseBtn: "Close"
       }
     };
 
@@ -3344,6 +3657,7 @@
           const subText = isZh ? `${fields.context} · 订阅: ${fields.tierTitle}` : `${fields.context} · ${fields.tierTitle}`;
 
           milestones.push({
+            id: m.id,
             year: year,
             brand: bKey,
             date: dateStr,
@@ -3351,6 +3665,11 @@
             title: m.name,
             sub: subText,
             desc: fields.desc,
+            context: fields.context,
+            tierTitle: fields.tierTitle,
+            tierCode: fields.tierCode,
+            modalities: fields.modalities,
+            isRetired: m.isRetired || false,
             created: m.created
           });
         });
@@ -3372,6 +3691,7 @@
       const allItems = getDynamicTimelineItems().filter(it => filterBrand === 'all' || it.brand === filterBrand);
       const totalItems = allItems.length;
       const visibleItems = allItems.slice(0, timelineDisplayLimit);
+      window.__TIMELINE_VISIBLE_ITEMS = visibleItems;
 
       let html = '<div class="timeline-beam"></div>';
       let currentYear = null;
@@ -3392,17 +3712,21 @@
         html += `
           <div class="timeline-node ${side}" data-brand="${it.brand}">
             <div class="timeline-dot"></div>
-            <article class="milestone-card brand-${it.brand}" onclick="this.classList.toggle('expanded')">
+            <article class="milestone-card brand-${it.brand}" onclick="openTimelineDetailModal(${idx})" title="Click to view details">
               <div class="ms-header">
                 <div class="ms-brand-tag">
                   <svg class="brand-svg-sm" aria-hidden="true"><use href="${brandLogoId}"/></svg>
                   <span class="ms-brand-pill">${it.org}</span>
                 </div>
-                <span class="ms-date-badge">${it.date}</span>
+                <span class="ms-date-badge ms-date-desktop">${it.date}</span>
               </div>
               <h3 class="ms-title">${it.title}</h3>
               <span class="ms-metaphor-sub">${it.sub}</span>
               <p class="ms-desc">${it.desc}</p>
+              <div class="ms-right-meta">
+                <span class="ms-date-badge">${it.date}</span>
+                <span class="ms-chevron" aria-hidden="true">›</span>
+              </div>
             </article>
           </div>
         `;
@@ -3437,6 +3761,92 @@
         });
       }
     }
+
+    /* ==========================================================================
+       Detail Modal Popup (Mobile Bottom-Sheet & Desktop Dialog)
+       ========================================================================== */
+    function openTimelineDetailModal(idx) {
+      const items = window.__TIMELINE_VISIBLE_ITEMS || [];
+      const it = items[idx];
+      if (!it) return;
+      openModelDetailModal(it);
+    }
+
+    function openModelDetailModal(it) {
+      const modal = document.getElementById('model-detail-modal');
+      if (!modal) return;
+
+      const brandLogoId = it.brand === 'gemini' ? '#logo-gemini' :
+                          it.brand === 'chatgpt' ? '#logo-openai' :
+                          it.brand === 'claude' ? '#logo-claude' :
+                          it.brand === 'qwen' ? '#logo-qwen' : '#logo-mistral';
+
+      const svgUse = document.getElementById('modal-brand-svg-use');
+      if (svgUse) svgUse.setAttribute('href', brandLogoId);
+
+      const orgEl = document.getElementById('modal-brand-org');
+      if (orgEl) orgEl.textContent = it.org || it.brand;
+
+      const titleEl = document.getElementById('modal-model-title');
+      if (titleEl) titleEl.textContent = it.title;
+
+      const tierBadge = document.getElementById('modal-tier-badge');
+      if (tierBadge) {
+        tierBadge.textContent = it.tierTitle || 'Standard';
+        tierBadge.className = `modal-tier-badge tier-${it.tierCode || 'standard'}`;
+      }
+
+      const dateBadge = document.getElementById('modal-date-badge');
+      if (dateBadge) dateBadge.textContent = `📅 ${it.date}`;
+
+      const ctxChip = document.getElementById('modal-context-chip');
+      if (ctxChip) ctxChip.textContent = `🧠 ${it.context || 'Standard Context'}`;
+
+      const statusChip = document.getElementById('modal-status-chip');
+      if (statusChip) {
+        const isZh = currentLang === 'zh';
+        statusChip.textContent = it.isRetired ? (isZh ? '⚪ 历史退役' : '⚪ Retired') : (isZh ? '🟢 官方现役' : '🟢 Active');
+      }
+
+      const specCtx = document.getElementById('modal-spec-context');
+      if (specCtx) specCtx.textContent = it.context || 'N/A';
+
+      const specMod = document.getElementById('modal-spec-modalities');
+      if (specMod) specMod.textContent = it.modalities || (currentLang === 'zh' ? '全模态 (文本/视觉/代码)' : 'Multimodal (Text/Vision/Code)');
+
+      const specTier = document.getElementById('modal-spec-tier');
+      if (specTier) specTier.textContent = it.tierTitle || 'Standard Plan';
+
+      const specId = document.getElementById('modal-spec-id');
+      if (specId) specId.textContent = it.id || it.title.toLowerCase().replace(/\s+/g, '-');
+
+      const descEl = document.getElementById('modal-desc-text');
+      if (descEl) descEl.textContent = it.desc;
+
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModelDetailModal() {
+      const modal = document.getElementById('model-detail-modal');
+      if (!modal) return;
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    function handleModalBackdropClick(event) {
+      if (event.target.id === 'model-detail-modal') {
+        closeModelDetailModal();
+      }
+    }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModelDetailModal();
+      }
+    });
 
     
     /* ==========================================================================
