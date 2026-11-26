@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v1.2.0] - 2026-11-26
+
+### 🎯 Centered Detail Modal & Agent Logo Navigation
+- **Centered Detail Modal**: Repositioned the mobile detail modal from bottom-sheet sticking to a perfectly centered floating dialog with equal vertical margins (0px delta), full 20px rounded corners, and backdrop blur.
+- **Agent Logo Menu**: Converted the AI Agents jump-navigation menu on mobile into 5 clean, single-row circular/squircle logo icon buttons (`Antigravity`, `Codex`, `Claude Code`, `Qwen Code`, `Mistral Vibe`).
+- **Unified Mobile Visual Language**: Both Models and Agents tabs now share the exact same minimalist, single-row logo navigation bar with zero text wrapping.
+
+---
+
 ## [v1.1.0] - 2026-11-26
 
 ### 📱 Mobile UI/UX Redesign & Architecture Overhaul
