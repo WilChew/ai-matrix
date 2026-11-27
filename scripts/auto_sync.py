@@ -24,7 +24,7 @@ RELEASE_NOTES_MD = os.path.join(PROJECT_ROOT, "release_notes.md")
 
 AGENT_REPOS = [
     {
-        "brand_key": "claude",
+        "brand_key": "claudecode",
         "name": "Claude Code",
         "repo": "anthropics/claude-code",
         "url_prefix": "https://github.com/anthropics/claude-code/releases/tag/"
@@ -34,6 +34,12 @@ AGENT_REPOS = [
         "name": "OpenAI Codex CLI",
         "repo": "openai/codex",
         "url_prefix": "https://github.com/openai/codex/releases/tag/"
+    },
+    {
+        "brand_key": "copilot",
+        "name": "GitHub Copilot CLI",
+        "repo": "github/copilot-cli",
+        "url_prefix": "https://github.com/github/copilot-cli/releases/tag/"
     }
 ]
 
@@ -89,8 +95,7 @@ def fetch_openrouter_frontier_models():
     
     models = data["data"]
     frontier_prefixes = [
-        "google/", "openai/", "anthropic/", "qwen/", "mistralai/",
-        "deepseek/", "meta-llama/", "x-ai/"
+        "google/", "openai/", "anthropic/", "microsoft/", "x-ai/", "bytedance/"
     ]
     frontier_models = []
     for m in models:
