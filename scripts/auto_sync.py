@@ -34,18 +34,6 @@ AGENT_REPOS = [
         "name": "OpenAI Codex CLI",
         "repo": "openai/codex",
         "url_prefix": "https://github.com/openai/codex/releases/tag/"
-    },
-    {
-        "brand_key": "qwen",
-        "name": "Qwen Code & Agent",
-        "repo": "QwenLM/Qwen-Agent",
-        "url_prefix": "https://github.com/QwenLM/Qwen-Agent/releases/tag/"
-    },
-    {
-        "brand_key": "deepseek",
-        "name": "DeepSeek Coder & Agent",
-        "repo": "deepseek-ai/DeepSeek-Coder",
-        "url_prefix": "https://github.com/deepseek-ai/DeepSeek-Coder/releases/tag/"
     }
 ]
 
