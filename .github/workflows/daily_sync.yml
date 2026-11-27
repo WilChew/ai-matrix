@@ -2,8 +2,10 @@ name: Frontier AI 24/7 Automated Sync
 
 on:
   schedule:
-    # Runs everyday at 00:00 UTC (08:00 AM CST / Beijing Time)
-    - cron: '0 0 * * *'
+    # 每天定时执行 4 次 (每 6 小时巡检一次，避开整点高峰以保证 GitHub 准时调度)
+    # 对应北京时间 (UTC+8): 02:15, 08:15, 14:15, 20:15
+    # 对应 UTC 时间: 18:15, 00:15, 06:15, 12:15
+    - cron: '15 0,6,12,18 * * *'
   workflow_dispatch:
     inputs:
       force:
