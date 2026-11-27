@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.3.3] - 2026-11-27
+
+### 🚀 DeepSeek V4.1 & ByteDance Doubao 2.1/2.0 Generation Upgrade (2026-11-27)
+
+Following official model verification and user guidance, calibrated the frontier spectrum and autonomous agent bindings for DeepSeek and ByteDance Doubao:
+
+- **DeepSeek Frontier Elevation**:
+  - Upgraded model family and agent badge to **DeepSeek-V4.1 / V4-Pro & R1**.
+  - Featured models: `DeepSeek-V4.1 Flash (1017)`, `DeepSeek-V4 Pro`, `DeepSeek-R1 (Open Weights)`, and `DeepSeek-V3`.
+  - Agent: **DeepSeek Harness Agent** (`https://www.deepseek.com/en/harness/`) with automated reasoning loops and self-healing.
+- **ByteDance Doubao 2.1 / 2.0 Generation Upgrade**:
+  - Upgraded ByteDance spectrum to **Doubao 2.1 / 2.0 Series & Trae AI Engine**.
+  - Added flagship models: `Doubao 2.1 Pro` (Flagship Coding, Agent & VLM), `Doubao 2.1 Turbo` (Ultra-fast agent loop), and `Doubao 2.0 Code` (Trae native software engineering expert).
+  - Trae AI Agent badge updated to: `🧠 Doubao-2.1-Pro / Code & Thinking`.
+- **Ecosystem Integrity & Validation**:
+  - All 7 desktop & native agent platforms rendered with zero JavaScript console errors.
+  - Both Desktop and Mobile (iPhone 390px) single-row logo navigation verified.
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.3.2] - 2026-11-27
 
 ### 💻 Desktop & Native AI Agents Roster (DeepSeek Harness & Top 7 Ecosystems) (2026-11-27)
