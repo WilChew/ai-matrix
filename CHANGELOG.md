@@ -7,6 +7,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.3.0] - 2026-11-27
+
+### 💻 Desktop-First Frontier AI & Official Desktop Agents Focus (2026-11-27)
+
+Streamlined the ecosystem matrix to focus exclusively on top AI platforms that provide native **Desktop Applications** and/or official **Desktop AI Agents**:
+
+- **Retained Top 5 Desktop-Enabled AI Platforms**:
+  1. **Google DeepMind**: Gemini 4 / 3.5 series · Official Desktop App: **Google Antigravity Desktop Orchestrator**.
+  2. **OpenAI**: GPT-4o / GPT-6 / o-series · Official Desktop App: **ChatGPT Desktop (macOS & Windows)** & **OpenAI Codex**.
+  3. **Anthropic**: Claude 3.5 / 3.7 series · Official Desktop App: **Claude Desktop (macOS & Windows, MCP)** & **Claude Code**.
+  4. **Microsoft**: Copilot / Phi-4 series · Official Desktop App: **Windows Copilot App** & **GitHub Copilot Workspace Desktop**.
+  5. **ByteDance**: Doubao 1.5 series · Official Desktop App: **Trae AI Native Desktop IDE / Agent**.
+- **Purged Non-Desktop Platforms**:
+  - Removed DeepSeek (Web/mobile only, no official desktop client).
+  - Removed Mistral AI (Web Le Chat & terminal CLI only).
+  - Removed xAI Grok (Web & cloud VM only, no desktop client).
+  - Removed Meta Muse (Web & messaging only, no desktop client).
+  - Removed Alibaba Qwen (Web & Python CLI only, no official standalone international desktop app).
+- **Navigation & Mobile Optimization**:
+  - Top navigation ribbons and mobile logo buttons now cleanly display the 5 desktop icons in a single non-wrapping row.
+  - Automated sync engine (`scripts/auto_sync.py`) updated to monitor active desktop releases.
+- **Client Cache Refresh**:
+  - Bumped client cache keys to force immediate refresh for returning visitors.
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.2.3] - 2026-11-27
 
 ### 🔍 Comprehensive Top 10 AI Plans & Commercial Pricing Audit (2026-11-27)
