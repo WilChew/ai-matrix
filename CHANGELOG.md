@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.3.4] - 2026-11-27
+
+### 🚀 Frontier Model Generational Calibration (Pure 2026 Ecosystem Roster) (2026-11-27)
+
+Following thorough review and generational calibration across all tracked laboratories, the ecosystem matrix strictly aligns with the pure 2026 frontier model generations:
+
+- **1. Google DeepMind**: Gemini 4 (Neon / Argon / Carbon / Hydrogen) · Official Desktop App: **Google Antigravity Desktop**.
+- **2. OpenAI**: GPT-6.2 (Astra / Sol / Terra) · Official Desktop App: **ChatGPT Desktop (macOS & Windows)** & **OpenAI Codex**.
+- **3. Anthropic**: Claude 5.5 / 5.2 (Fable 5.2 / Opus 5.5 / Sonnet 5.5 / Haiku 5.5) · Official Desktop App: **Claude Desktop (macOS & Windows, MCP)** & **Claude Code**.
+- **4. Microsoft**: Copilot Workspace & Phi-4 · Official Desktop App: **Windows Copilot App** & **GitHub Copilot Workspace Desktop**.
+- **5. xAI**: Grok 4.7 / Grok 4 · Official Autonomous Agent: **Grok Bot** (`https://x.ai/bot`).
+- **6. DeepSeek**: DeepSeek-V4.1 / V4-Pro & R1 · Official Autonomous Agent: **DeepSeek Harness Agent** (`https://www.deepseek.com/en/harness/`).
+- **7. ByteDance**: 豆包 2.1 (Pro / Turbo) & 2.0 Code · Official Desktop App: **Trae AI Native Desktop IDE / Agent**.
+
+- **Ecosystem Cleanliness**:
+  - Eliminated legacy model generation naming mix-ups.
+  - Single-row 7-logo ribbon validated on mobile (390px iPhone).
+  - Client cache refreshed with zero JavaScript errors.
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.3.3] - 2026-11-27
 
 ### 🚀 DeepSeek V4.1 & ByteDance Doubao 2.1/2.0 Generation Upgrade (2026-11-27)
