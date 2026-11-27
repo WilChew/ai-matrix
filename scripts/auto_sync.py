@@ -40,6 +40,12 @@ AGENT_REPOS = [
         "name": "GitHub Copilot CLI",
         "repo": "github/copilot-cli",
         "url_prefix": "https://github.com/github/copilot-cli/releases/tag/"
+    },
+    {
+        "brand_key": "deepseek",
+        "name": "DeepSeek Harness & CLI",
+        "repo": "deepseek-ai/DeepSeek-Coder",
+        "url_prefix": "https://github.com/deepseek-ai/DeepSeek-Coder/releases/tag/"
     }
 ]
 
@@ -95,7 +101,7 @@ def fetch_openrouter_frontier_models():
     
     models = data["data"]
     frontier_prefixes = [
-        "google/", "openai/", "anthropic/", "microsoft/", "x-ai/", "bytedance/"
+        "google/", "openai/", "anthropic/", "microsoft/", "x-ai/", "deepseek/", "bytedance/"
     ]
     frontier_models = []
     for m in models:
