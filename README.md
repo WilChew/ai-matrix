@@ -10,16 +10,16 @@ A high-performance, responsive frontier intelligence dashboard tracking global t
 
 ---
 
-## ✨ Features (v2.3.3 Desktop & Native AI Agents Roster)
+## ✨ Features (v2.3.4 Frontier Model Generational Calibration)
 
 - **Top 7 Desktop & Native Agent AI Ecosystems**:
-  1. **Google DeepMind** (Gemini · Native App: *Google Antigravity Desktop Orchestrator*)
-  2. **OpenAI** (ChatGPT · Native App: *ChatGPT Desktop macOS/Windows* & *Codex*)
-  3. **Anthropic** (Claude · Native App: *Claude Desktop macOS/Windows with MCP* & *Claude Code*)
-  4. **Microsoft** (Copilot · Native App: *Windows Copilot* & *GitHub Copilot Workspace*)
+  1. **Google DeepMind** (Gemini 4 Neon / Argon / Carbon · Native App: *Google Antigravity Desktop Orchestrator*)
+  2. **OpenAI** (GPT-6.2 Astra / Sol / Terra · Native App: *ChatGPT Desktop macOS/Windows* & *Codex*)
+  3. **Anthropic** (Claude 5.5 / 5.2 Fable / Opus / Sonnet · Native App: *Claude Desktop macOS/Windows with MCP* & *Claude Code*)
+  4. **Microsoft** (Copilot Workspace & Phi-4 · Native App: *Windows Copilot* & *GitHub Copilot Workspace*)
   5. **xAI** (Grok 4.7 / Grok 4 · Official Agent: *Grok Bot* at [https://x.ai/bot](https://x.ai/bot) with 24/7 cloud execution, desktop/terminal/browser control)
   6. **DeepSeek** (DeepSeek-V4.1 / V4-Pro & R1 · Official Agent: *DeepSeek Harness Agent* at [https://www.deepseek.com/en/harness/](https://www.deepseek.com/en/harness/))
-  7. **ByteDance** (Doubao 2.1 / 2.0 & 1.5 · Native App: *Trae AI Native Desktop IDE / Agent*)
+  7. **ByteDance** (Doubao 2.1 Pro / Turbo & 2.0 Code · Native App: *Trae AI Native Desktop IDE / Agent*)
 - **Pure Native Desktop & Agent Focus**: Excluded web-only, mobile-only, and CLI-only models without standalone desktop client or native desktop agent support.
 - **24/7 Automated Sync**: GitHub Actions scheduled cron runs 4 times daily to detect new agent releases and auto-deploy.
 - **Ultra-Compact Mobile UX**: Single-row 7-logo filter ribbon, 46px compact tiles, centered detail modals.
