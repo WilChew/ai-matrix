@@ -7,6 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.2.2] - 2026-11-27
+
+### 💎 Meta Muse Official Plan & Tier Architecture Alignment (2026-11-27)
+
+- **Meta Muse Official Plans Correction**:
+  - Replaced generic placeholder tiers (`Free / Plus / Ultra`) with Meta Muse's official three-tier plan structure:
+    - **Free ($0)**: Base periodic Muse Tokens quota for casual, lightweight personal assistance.
+    - **Power ($20 / month)**: 500 million Muse Tokens per week, up to 10 automated phone calls per day, and seamless cross-device context memory.
+    - **Maximum ($100 / month)**: 3 billion Muse Tokens per week, up to 20 phone calls per day, and dedicated Secure VM continuous background autonomous workflow execution.
+- **Model Spectrum Tier Mapping**:
+  - `Muse Spark Pro` mapped to **Maximum ($100)** subscriber tier (deep multi-app orchestration).
+  - `Muse Spark` mapped to **Power ($20)** tier (daily copilot & routine task automation).
+  - `Muse Ember` mapped to **Free ($0)** tier (on-device & offline execution).
+- **Client Cache Refresh**:
+  - Bumped localStorage cache keys to invalidate outdated client snapshots.
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.2.1] - 2026-11-27
 
 ### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-27)
