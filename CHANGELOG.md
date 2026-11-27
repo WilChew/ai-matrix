@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.3.5] - 2026-11-27
+
+### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-27)
+
+This update was automatically discovered, verified, and released via GitHub Actions:
+
+- **OpenAI Codex CLI `rust-v0.174.0-alpha.9`** (2026.11.27): 0.174.0-alpha.9
+- **GitHub Copilot CLI `v1.0.118-0`** (2026.11.27): 1.0.118-0
+
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.3.4] - 2026-11-27
 
 ### 🚀 Frontier Model Generational Calibration (Pure 2026 Ecosystem Roster) (2026-11-27)
