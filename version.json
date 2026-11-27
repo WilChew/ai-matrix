@@ -1,5 +1,5 @@
 {
-  "version": "v2.2.1",
-  "title": "v2.2.1 - Automated Frontier Sync: OpenAI Codex CLI, Qwen Code & Agent",
-  "release_notes": "### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-27)\n\nThis update was automatically discovered, verified, and released via GitHub Actions:\n\n- **OpenAI Codex CLI `rust-v0.174.0-alpha.8`** (2026.11.26): 0.174.0-alpha.8\n- **Qwen Code & Agent `v0.0.26`** (2025.05.29): Autonomous agent capability enhancements\n\n- **Author**: `Wil Chew@2026`"
+  "version": "v2.2.2",
+  "title": "v2.2.2 - Automated Frontier Sync: Qwen Code & Agent",
+  "release_notes": "### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-27)\n\nThis update was automatically discovered, verified, and released via GitHub Actions:\n\n- **Qwen Code & Agent `v0.0.26`** (2025.05.29): Autonomous agent capability enhancements\n\n- **Author**: `Wil Chew@2026`"
 }

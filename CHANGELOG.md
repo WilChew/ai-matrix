@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.2.2] - 2026-11-27
+
+### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-27)
+
+This update was automatically discovered, verified, and released via GitHub Actions:
+
+- **Qwen Code & Agent `v0.0.26`** (2025.05.29): Autonomous agent capability enhancements
+
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.2.1] - 2026-11-27
 
 ### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-27)
