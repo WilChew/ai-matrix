@@ -7,6 +7,32 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.3.2] - 2026-11-27
+
+### 💻 Desktop & Native AI Agents Roster (DeepSeek Harness & Top 7 Ecosystems) (2026-11-27)
+
+Following user review and official agent documentation, the ecosystem matrix now strictly focuses on the **Top 7 AI Ecosystems** featuring native **Desktop Applications** or official **Desktop/Autonomous AI Agents**:
+
+- **Retained Top 7 Desktop & Native Agent AI Ecosystems**:
+  1. **Google DeepMind**: Gemini · Official Desktop App & Orchestrator: **Google Antigravity Desktop**.
+  2. **OpenAI**: ChatGPT · Official Desktop App: **ChatGPT Desktop (macOS & Windows)** & **OpenAI Codex**.
+  3. **Anthropic**: Claude · Official Desktop App: **Claude Desktop (macOS & Windows, MCP)** & **Claude Code**.
+  4. **Microsoft**: Copilot · Official Desktop App: **Windows Copilot App** & **GitHub Copilot Workspace Desktop**.
+  5. **xAI**: Grok 4.7 / Grok 4 · Official Autonomous Agent: **Grok Bot** (`https://x.ai/bot`) with 24/7 cloud routine execution, browser/terminal/desktop filesystem control, and multi-bot collaboration.
+  6. **DeepSeek**: DeepSeek-V3 / R1 · Official Autonomous Agent: **DeepSeek Harness Agent** (`https://www.deepseek.com/en/harness/`) with automated reasoning loops, multi-repo context, and test-driven self-healing.
+  7. **ByteDance**: Doubao 1.5 · Official Desktop App: **Trae AI Native Desktop IDE / Agent**.
+- **Excluded Non-Desktop Platforms (3 removed)**:
+  - Mistral AI, Meta Muse, Alibaba Qwen (Web / API / messaging only, lacking standalone desktop client or native desktop agent apps).
+- **High-Density Mobile & Responsive Navigation**:
+  - All 7 squircle brand logo cards fit in a neat single row without wrapping on mobile and desktop views.
+  - Mobile modal and tab layers verified with zero JavaScript console errors.
+- **Verified 24/7 Automated Cloud Sync**:
+  - GitHub Actions Workflow permissions confirmed (`Read and write permissions` granted).
+  - `daily_sync.yml` cloud workflow tested and verified running successfully.
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.3.1] - 2026-11-27
 
 ### 💻 Desktop & Official AI Agents Roster (Grok Bot & Top 6 Ecosystems) (2026-11-27)
