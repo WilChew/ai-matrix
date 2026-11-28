@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [v2.3.6] - 2026-11-28
+
+### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-28)
+
+This update was automatically discovered, verified, and released via GitHub Actions:
+
+- **GitHub Copilot CLI `v1.0.118-2`** (2026.11.28): 1.0.118-2
+
+- **Author**: `Wil Chew@2026`
+
+---
+
 ## [v2.3.5] - 2026-11-27
 
 ### 🤖 Automated Frontier Intelligence & Agent Sync (2026-11-27)
